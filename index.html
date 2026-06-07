@@ -1,3 +1,4 @@
+cat > /mnt/user-data/outputs/portfolio_v2.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@ scroll-behavior:smooth;
 
 body{
 background:#0f172a;
-color:white;
+color:rgb(255, 255, 255);
 }
 
 header{
@@ -89,7 +90,7 @@ padding:70px 10%;
 .title{
 font-size:35px;
 margin-bottom:30px;
-color:#38bdf8;
+color:#00e6d2;
 }
 
 .card{
@@ -124,6 +125,32 @@ text-align:center;
 background:#020617;
 }
 
+.hobbies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.hobby{
+background:#334155;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.languages{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.language{
+background:#334155;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
 .contact p{
 margin:10px 0;
 }
@@ -142,6 +169,8 @@ margin:10px 0;
 <a href="#projects">Projects</a>
 <a href="#internships">Internships</a>
 <a href="#certifications">Certificates</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#languages">Languages</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -340,6 +369,56 @@ I love learning new technologies and solving real-world problems.
 </section>
 
 
+<section id="hobbies">
+
+<h2 class="title">Hobbies</h2>
+
+<div class="hobbies">
+
+<div class="hobby">🎨 Heena Art (Mehendi)</div>
+
+<div class="hobby">✈️ Travelling</div>
+
+<div class="hobby">🎵 Singing</div>
+
+<div class="hobby">🚴 Cycling</div>
+
+<div class="hobby">🗣️ Learning New Languages</div>
+
+<div class="hobby">📜 Learning About History</div>
+
+<div class="hobby">🎬 Watching Movies</div>
+
+<div class="hobby">🧺 Collecting Items</div>
+
+<div class="hobby">🍳 Cooking</div>
+
+</div>
+
+</section>
+
+
+<section id="languages">
+
+<h2 class="title">Languages</h2>
+
+<div class="languages">
+
+<div class="language">English</div>
+
+<div class="language">Hindi</div>
+
+<div class="language">Urdu</div>
+
+<div class="language">Kannada</div>
+
+<div class="language">Tulu</div>
+
+</div>
+
+</section>
+
+
 <section id="contact">
 
 <h2 class="title">Contact</h2>
@@ -361,9 +440,10 @@ I love learning new technologies and solving real-world problems.
 
 <footer>
 
-© 2026 Gohar Thabassum | Portfolio Website
+©️ 2026 Gohar Thabassum | Portfolio Website
 
 </footer>
 
 </body>
 </html>
+HTMLEOF
